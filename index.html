@@ -1341,4 +1341,408 @@
 
       <div class="kpi-grid reveal">
         <div class="kpi-card">
-          <div class="kpi-labe
+          <div class="kpi-label">当日相对指数超额收益</div>
+          <div class="kpi-value" data-counter="3.4">0%</div>
+          <div class="kpi-sub">与主要指数相比，若超额收益长期极端偏高或偏低，都值得深入分析原因。</div>
+          <div class="kpi-trend">过去 30 日分位：72%</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-label">成交量放大倍数（量比）</div>
+          <div class="kpi-value" data-counter="2.8">0</div>
+          <div class="kpi-sub">≥3 倍且持续数日，往往意味着“故事被讲得很热”或有大资金在进出。</div>
+          <div class="kpi-trend">板块中位数：1.4</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-label">前五账户成交集中度</div>
+          <div class="kpi-value" data-counter="46">0%</div>
+          <div class="kpi-sub">若长期高于 50%，说明价格可能主要由少数交易方驱动。</div>
+          <div class="kpi-trend">监管重点监测区：&gt; 60%</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-label">最近 30 日异常日数量</div>
+          <div class="kpi-value" data-counter="4">0</div>
+          <div class="kpi-sub">触发异常阈值的交易日越多，越需要交叉核查公告、调研活动等信息。</div>
+          <div class="kpi-trend">主要原因：量价共振</div>
+        </div>
+      </div>
+
+      <div class="grid-2" style="margin-top:20px;">
+        <div class="card reveal">
+          <div class="card-header">
+            <h3 class="card-title">时间轴：公告与交易的交叉视图</h3>
+            <span class="pill alt">一眼看到“先交易还是先信息”</span>
+          </div>
+          <div class="timeline" id="timeline">
+            <div class="timeline-track">
+              <div class="timeline-track-fill" id="timeline-fill"></div>
+            </div>
+            <div class="timeline-events">
+              <div class="timeline-event active" data-step="1"
+                   data-text="公司发布业绩预告，信息真实且市场此前并不知情，随后出现合理放量上涨。">
+                <div class="timeline-dot"><span></span></div>
+                <div>业绩预告</div>
+              </div>
+              <div class="timeline-event" data-step="2"
+                   data-text="多家机构集中调研，公司口径一致透明，短期内股价稳中有升。">
+                <div class="timeline-dot"><span></span></div>
+                <div>集中调研</div>
+              </div>
+              <div class="timeline-event" data-step="3"
+                   data-text="若在重大负面公告之前，已经出现持续的大额减持与异常下跌，监管会重点核查信息泄露与内幕交易。">
+                <div class="timeline-dot"><span></span></div>
+                <div>负面披露</div>
+              </div>
+              <div class="timeline-event" data-step="4"
+                   data-text="公告落地后，如价格走势与信息内容严重不匹配，也可能触发进一步询问。">
+                <div class="timeline-dot"><span></span></div>
+                <div>后续表现</div>
+              </div>
+            </div>
+            <div class="timeline-caption" id="timeline-caption">
+              公司发布业绩预告，信息真实且市场此前并不知情，随后出现合理放量上涨。
+            </div>
+          </div>
+        </div>
+
+        <div class="card reveal">
+          <div class="card-header">
+            <h3 class="card-title">内部视角：公司能做、不能做的几件事</h3>
+            <span class="pill">“把资源放在有效的地方”</span>
+          </div>
+          <ul class="list-clean">
+            <li>
+              <span class="bullet"></span>
+              <div><strong>可以做：</strong>前瞻沟通长期战略与财务纪律，为市场提供可验证的中长期预期锚。</div>
+            </li>
+            <li>
+              <span class="bullet"></span>
+              <div><strong>可以做：</strong>在合理估值区间内实施回购与分红，明确政策边界与信息披露节奏。</div>
+            </li>
+            <li>
+              <span class="bullet red"></span>
+              <div><strong>不能做：</strong>与任何外部资金约定隐性“兜底条款”，或承诺某个价格区间的短期表现。</div>
+            </li>
+            <li>
+              <span class="bullet red"></span>
+              <div><strong>不能做：</strong>在内幕信息敏感期内进行回购、减持或指示他人交易。</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 红线与误判 -->
+    <section id="risk">
+      <div class="section-header reveal">
+        <div class="section-title-group">
+          <div class="section-kicker">RED LINES & MISJUDGMENTS</div>
+          <h2 class="section-title">红线与常见误判：在复杂现实中保持“学术感”的冷静</h2>
+        </div>
+        <div class="section-sub">
+          在真实市场里，价格一定会有噪音。市值管理团队既要清楚监管红线，
+          也要警惕“过度联想”，把正常波动误读成阴谋论。本模块尝试用折叠卡片的方式，
+          把“绝对不能碰的行为”与“常见误判”放在一起对照。
+        </div>
+      </div>
+
+      <div class="accordion reveal" id="accordion">
+        <div class="accordion-item active">
+          <button class="accordion-header">
+            <div class="accordion-title">
+              <span>① 红线：任何形式的合成操纵与保底收益</span>
+              <span class="accordion-tag">高风险 · 监管重罚</span>
+            </div>
+            <div class="accordion-icon">›</div>
+          </button>
+          <div class="accordion-panel">
+            <p>
+              典型红线包括：通过关联账户对倒、自买自卖、虚假申报、尾盘拉抬等方式扭曲价格；
+              与外部资金约定保底收益或隐性对赌，并用交易手段“帮对方兑现”；利用未公开信息配合交易。
+            </p>
+            <p>
+              监管实践表明，一旦被定义为操纵行为，往往同时面临没收违法所得、多倍罚款、
+              市场禁入甚至刑事责任。
+            </p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header">
+            <div class="accordion-title">
+              <span>② 常见误判：把一切上涨都视为“操纵”</span>
+            </div>
+            <div class="accordion-icon">›</div>
+          </button>
+          <div class="accordion-panel">
+            <p>
+              价格的短期剧烈波动本身并不等同于操纵。新产品发布、行业政策变化、全球风险偏好
+              变化等，都可能导致合理的大幅波动。合理的做法是：用量化指标筛选“值得深究的异常日”，
+              再结合信息与基本面作解释，而不是从结论倒推“谁在操盘”。
+            </p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header">
+            <div class="accordion-title">
+              <span>③ 市值管理团队的“安全工作半径”</span>
+            </div>
+            <div class="accordion-icon">›</div>
+          </button>
+          <div class="accordion-panel">
+            <p>
+              对公司内部而言，相对安全的工作重心是：提升信息披露质量、强化长期投资者沟通、
+              设计可持续的回购与分红政策、审慎使用并购和股权激励工具。
+            </p>
+            <p>
+              任何涉及具体买卖价位、短期收益承诺、秘密账户安排的讨论，都应该立即交由合规与法律部门介入，
+              并明确拒绝执行。
+            </p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header">
+            <div class="accordion-title">
+              <span>④ 给董事会与管理层的“一个问题”</span>
+            </div>
+            <div class="accordion-icon">›</div>
+          </button>
+          <div class="accordion-panel">
+            <p>
+              当我们讨论任何市值管理动作时，都可以问自己一个问题：
+              <strong>“如果三年后所有细节被完整公开在监管文件中，我们是否仍然可以坦然辩护？”</strong>
+            </p>
+            <p>
+              能经受得住这个测试的，大概率是合规且负责任的决策；否则就应当停下来再想一想。
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    // ===== 工具函数 =====
+    function scrollToSection(id) {
+      var el = document.getElementById(id);
+      if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+
+    // ===== reveal on scroll =====
+    (function() {
+      var observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.18 });
+
+      document.querySelectorAll('.reveal').forEach(function(el) {
+        observer.observe(el);
+      });
+    })();
+
+    // ===== Hero mini timeline animation 与数字计数 =====
+    (function() {
+      var triggered = false;
+      var hero = document.querySelector('.hero');
+
+      if (!hero) return;
+
+      var obs = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting && !triggered) {
+            triggered = true;
+            // 进度条
+            document.querySelectorAll('.mini-timeline-track span').forEach(function(span) {
+              var p = parseFloat(span.getAttribute('data-progress') || '0');
+              span.style.transition = 'width 1.4s cubic-bezier(0.16, 1, 0.3, 1)';
+              span.style.width = p + '%';
+            });
+            // 数字计数
+            animateCounters();
+            obs.unobserve(hero);
+          }
+        });
+      }, { threshold: 0.35 });
+
+      obs.observe(hero);
+    })();
+
+    function animateCounters() {
+      document.querySelectorAll('[data-counter]').forEach(function(el) {
+        var target = parseFloat(el.getAttribute('data-counter') || '0');
+        var isPercent = (el.textContent || '').indexOf('%') !== -1;
+        var duration = 1400;
+        var start = null;
+
+        function step(timestamp) {
+          if (!start) start = timestamp;
+          var progress = Math.min((timestamp - start) / duration, 1);
+          var value = target * progress;
+          el.textContent = isPercent ? value.toFixed(1) + '%' : value.toFixed(1).replace(/\.0$/, '');
+          if (progress < 1) {
+            requestAnimationFrame(step);
+          }
+        }
+        requestAnimationFrame(step);
+      });
+    }
+
+    // ===== 不同市场 tab 内容 =====
+    (function() {
+      var data = {
+        a: {
+          intro: "A股仍然具有显著的个人投资者参与度，但机构资金（公募、社保、险资、北向资金等）在市值与定价中的影响力持续提升。",
+          metrics: [
+            ["个人投资者成交占比（区间）", "约 50%–60%"],
+            ["机构投资者市值占比", "约 60%+（集中于大盘蓝筹）"],
+            ["典型定价力量", "公募/险资/北向 + 叙事与政策预期"],
+            ["市值管理重心", "信息披露质量 + 机构沟通 + 监管红线把握"]
+          ],
+          note: "与散户占比较高的环境相适应，A股市值管理需要尤其关注信息披露的透明度与监管边界。"
+        },
+        hk: {
+          intro: "港股中，境外机构与本地长线资金在定价中占据核心地位。南下资金偏好头部蓝筹与高股息标的。",
+          metrics: [
+            ["零售投资者成交占比", "约 15%–20%"],
+            ["“外来”机构资金占比", "多数行业龙头超过 60%"],
+            ["典型定价力量", "海外机构/对冲基金 + 指数与 ETF"],
+            ["市值管理重心", "机构覆盖度 + 股东结构 + 股息与回购政策"]
+          ],
+          note: "如果缺乏 anchor 机构股东与研究覆盖，中小市值公司往往很难获得稳定估值和流动性。"
+        },
+        us: {
+          intro: "美股以资产管理机构为主，养老金、共同基金、保险与 ETF 等是长期的价格决定者，回购与股息政策是重要的沟通语言。",
+          metrics: [
+            ["零售成交占比（疫情后）", "约 20% 左右"],
+            ["机构持股比例", "大盘股中位数常在 70% 以上"],
+            ["典型定价力量", "ROE/ROIC + FCF + 回购/分红政策"],
+            ["市值管理重心", "资本结构管理 + 长期资本回报承诺"]
+          ],
+          note: "在这种环境下，市值管理本质上是“资本结构与现金流分配管理”。短线“讲故事”往往难以持续。"
+        }
+      };
+
+      var panel = document.getElementById('market-panel');
+      var tabs = document.querySelectorAll('#market-tabs .tab');
+
+      function render(key) {
+        var d = data[key];
+        if (!d || !panel) return;
+        var rows = d.metrics.map(function(row) {
+          return "<tr><th>" + row[0] + "</th><td>" + row[1] + "</td></tr>";
+        }).join("");
+        panel.innerHTML =
+          '<div class="tab-grid">' +
+            '<div>' +
+              '<p>' + d.intro + '</p>' +
+              '<p style="margin-top:8px; font-size:12px; color:#9b8b6f;"><strong>市值管理启示：</strong>' +
+              d.note +
+              '</p>' +
+            '</div>' +
+            '<div>' +
+              '<table class="metric-table">' + rows + '</table>' +
+            '</div>' +
+          '</div>';
+      }
+
+      tabs.forEach(function(tab) {
+        tab.addEventListener('click', function() {
+          tabs.forEach(function(t) { t.classList.remove('active'); });
+          tab.classList.add('active');
+          render(tab.getAttribute('data-market'));
+        });
+      });
+
+      render('a');
+    })();
+
+    // ===== 异常价格曲线 tooltip & line 动画 =====
+    (function() {
+      var wrapper = document.getElementById('price-chart-wrapper');
+      if (!wrapper) return;
+
+      var line = document.getElementById('price-line');
+      var tooltip = document.getElementById('chart-tooltip');
+
+      // 曲线进入视口后触发绘制动画
+      var obs = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            line.classList.add('active');
+            obs.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.35 });
+      obs.observe(wrapper);
+
+      function showTooltip(evt) {
+        var target = evt.target;
+        var label = target.getAttribute('data-label');
+        var detail = target.getAttribute('data-detail');
+        if (!label || !tooltip) return;
+
+        var rect = wrapper.getBoundingClientRect();
+        var cx = evt.clientX - rect.left;
+        var cy = evt.clientY - rect.top;
+
+        tooltip.querySelector('.chart-tooltip-title').textContent = label;
+        tooltip.querySelector('.chart-tooltip-body').textContent = detail;
+
+        tooltip.style.left = cx + 'px';
+        tooltip.style.top = cy + 'px';
+        tooltip.classList.add('visible');
+      }
+
+      function hideTooltip() {
+        if (tooltip) tooltip.classList.remove('visible');
+      }
+
+      wrapper.querySelectorAll('.chart-point').forEach(function(pt) {
+        pt.addEventListener('mouseenter', showTooltip);
+        pt.addEventListener('mouseleave', hideTooltip);
+      });
+    })();
+
+    // ===== 时间轴交互 =====
+    (function() {
+      var events = document.querySelectorAll('.timeline-event');
+      var caption = document.getElementById('timeline-caption');
+      var fill = document.getElementById('timeline-fill');
+
+      if (!events.length || !caption || !fill) return;
+
+      events.forEach(function(ev) {
+        ev.addEventListener('click', function() {
+          events.forEach(function(e) { e.classList.remove('active'); });
+          ev.classList.add('active');
+          var step = parseInt(ev.getAttribute('data-step') || '1', 10);
+          var text = ev.getAttribute('data-text') || '';
+          caption.textContent = text;
+          var width = 20 + (step - 1) * 24;
+          fill.style.width = width + '%';
+        });
+      });
+    })();
+
+    // ===== 折叠卡片 =====
+    (function() {
+      document.querySelectorAll('.accordion-item').forEach(function(item) {
+        var header = item.querySelector('.accordion-header');
+        if (!header) return;
+        header.addEventListener('click', function() {
+          var isActive = item.classList.contains('active');
+          document.querySelectorAll('.accordion-item').forEach(function(i) {
+            i.classList.remove('active');
+          });
+          if (!isActive) item.classList.add('active');
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
